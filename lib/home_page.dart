@@ -63,18 +63,23 @@ class _HomePageState extends State<HomePage> {
                     final filter = filters[index];
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
-                      child: Chip(
-                        backgroundColor: const Color.fromRGBO(245, 247, 249, 1),
-                        side: const BorderSide(
-                          color: Color.fromRGBO(245, 247, 249, 1)
+                      child: GestureDetector(
+                        onTap: (){
+
+                        },
+                        child: Chip(
+                          backgroundColor: const Color.fromRGBO(245, 247, 249, 1),
+                          side: const BorderSide(
+                            color: Color.fromRGBO(245, 247, 249, 1)
+                          ),
+                          label: Text(filter),
+                          labelStyle: const TextStyle(
+                            fontSize: 16,
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 20,
+                              vertical: 15),
                         ),
-                        label: Text(filter),
-                        labelStyle: const TextStyle(
-                          fontSize: 16,
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 15),
                       ),
                     );
                   }
