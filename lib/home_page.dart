@@ -78,8 +78,8 @@ class _HomePageState extends State<HomePage> {
                             fontSize: 16,
                           ),
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 20,
-                              vertical: 15),
+                              horizontal: 16,
+                              vertical: 16),
                         ),
                       ),
                     );
