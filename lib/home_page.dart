@@ -8,7 +8,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<String> filters = const ['All', 'Nike', 'Adidas', 'Puma', 'New Balance'];
+  final List<String> filters = const [
+    'All',
+    'Nike',
+    'Adidas',
+    'Puma',
+    'New Balance'
+  ];
   late String selectedFilter = filters[0];
 
   @override
@@ -23,8 +29,7 @@ class _HomePageState extends State<HomePage> {
       borderSide: BorderSide(
         color: Color.fromRGBO(225, 225, 225, 1),
       ),
-      borderRadius: BorderRadius.horizontal(left: Radius.circular(50)
-      ),
+      borderRadius: BorderRadius.horizontal(left: Radius.circular(50)),
     );
     return Scaffold(
       body: SafeArea(
@@ -34,7 +39,8 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Padding(
                   padding: EdgeInsets.all(16),
-                  child: Text("Shoes\nCollection",
+                  child: Text(
+                    "Shoes\nCollection",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 35,
@@ -64,27 +70,24 @@ class _HomePageState extends State<HomePage> {
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: GestureDetector(
-                        onTap: () {
-
-                        },
+                        onTap: () {},
                         child: Chip(
-                          backgroundColor: const Color.fromRGBO(
-                              245, 247, 249, 1),
+                          backgroundColor:
+                              const Color.fromRGBO(245, 247, 249, 1),
                           side: const BorderSide(
-                              color: Color.fromRGBO(245, 247, 249, 1)
-                          ),
+                              color: Color.fromRGBO(245, 247, 249, 1)),
                           label: Text(filter),
                           labelStyle: const TextStyle(
                             fontSize: 16,
                           ),
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 16),
+                              horizontal: 16, vertical: 16),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30)),
                         ),
                       ),
                     );
-                  }
-              ),
+                  }),
             ),
           ],
         ),
