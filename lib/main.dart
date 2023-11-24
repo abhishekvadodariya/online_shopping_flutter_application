@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
           hintStyle: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
+            color: Colors.black
           ),
           prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
         ),
