@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
             seedColor: const Color.fromRGBO(0, 128, 255, 1)),
         inputDecorationTheme: const InputDecorationTheme(
           hintStyle: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
+            fontWeight: FontWeight.normal,
+            fontSize: 16,
           ),
           prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
         ),
