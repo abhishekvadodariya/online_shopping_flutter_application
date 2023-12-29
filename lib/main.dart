@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         inputDecorationTheme: const InputDecorationTheme(
           hintStyle: TextStyle(
             fontWeight: FontWeight.normal,
-            fontSize: 20,
+            fontSize: 16,
           ),
           prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
         ),
